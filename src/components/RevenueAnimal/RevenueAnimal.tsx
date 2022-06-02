@@ -82,17 +82,11 @@ const RevenueAnimal: FC<IRevenueAnimal> = ({
   return (
     /* @ts-ignore */
     <Container {...containerAttributes}>
-      <Sprite
-        texture={graphicTexture}
-        anchor={0.5}
-        x={rectX}
-        y={rectangleAttributes.y}
-      />
+      <Sprite texture={graphicTexture} anchor={0.5} x={rectX} />
       <Sprite x={spriteX} {..._spriteAttributes} />
       <Text {...textAttributes} style={style} />
       <Text
         x={10}
-        y={10}
         text={(spriteX!! / 1000).toFixed(2).toString()}
         style={style}
       />

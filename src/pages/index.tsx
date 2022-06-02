@@ -61,8 +61,9 @@ const Home: NextPage = () => {
     setScreenWindow(window);
   }, []);
 
+  // the screen height  to give some space above and below divided by the number of items in the spriteMeta
   const $spacingDistance =
-    (screenWindow?.innerHeight! - 150) / spriteMeta.length;
+    (screenWindow?.innerHeight! - 120) / spriteMeta.length;
 
   return (
     <Stage
@@ -100,7 +101,7 @@ const Home: NextPage = () => {
 
         const textAttributes = {
           text: item.industry,
-          x: 60,
+          x: 50,
           y: 0,
           anchor: [0, 0.5],
         };
